@@ -1,6 +1,6 @@
 import streamlit as st
 import datetime
-import time
+#import time
 st.markdown("<h1 style='text-align: center; color: green;'>game password</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: black;'>"
 "Придумай пароль!</p>", unsafe_allow_html=True)
