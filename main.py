@@ -5,10 +5,10 @@ st.markdown("<h1 style='text-align: center; color: green;'>game password</h1>", 
 st.markdown("<p style='text-align: center; color: black;'>"
 "Придумай пароль!</p>", unsafe_allow_html=True)
 st.markdown('*начнём игру?*')
-current = time.localtime()
-hour = time.strftime('%H')
-date = time.strftime('%d')
-day = time.strftime('%A')
+#current = time.localtime()
+#hour = time.strftime('%H')
+#date = time.strftime('%d')
+#day = time.strftime('%A')
 
 def check(password):
     count_s_symbol = 0
@@ -34,12 +34,12 @@ def check(password):
         st.text('Пароль должен содержать название движения в балете')
     elif '1991' in password:
         st.text('Пароль не должен содержать год распада СССР')
-    elif hour not in password:
-        st.text('Пароль должен содержать текущий час')
-    elif date not in password:
-        st.text('Пароль должен содержать текущию дату')
-    elif day not in password:
-        st.text('Пароль должен содержать название дня недели')
+   # elif hour not in password:
+       # st.text('Пароль должен содержать текущий час')
+   # elif date not in password:
+      #  st.text('Пароль должен содержать текущию дату')
+   # elif day not in password:
+       # st.text('Пароль должен содержать название дня недели')
     elif count_s_symbol < 2:
         st.markdown('Пароль должен содержать один спец. символ')
     elif count_num < 4:
